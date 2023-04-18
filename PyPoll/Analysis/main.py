@@ -37,11 +37,6 @@ with open('output.txt', 'a') as f:
     print('-----------------------', file=f)
     print(f"Total Votes: {total_votes}", file=f)
     print('-----------------------')
-    #for loop to iterate though each row.
-    #for i in range(len(df_votes_candidate)):
-        # for j in range
-        # print(df_votes_candidate.loc[i][i])
-
     print(f"{df_votes_candidate.loc[0][0]}: {((df_votes_candidate.loc[0][2]*100).round(3))}% ({df_votes_candidate.loc[0][1]}) ", file=f)
     print(f"{df_votes_candidate.loc[1][0]}: {((df_votes_candidate.loc[1][2]*100).round(3))}% ({df_votes_candidate.loc[1][1]}) ", file=f)
     print(f"{df_votes_candidate.loc[2][0]}: {((df_votes_candidate.loc[2][2]*100).round(3))}% ({df_votes_candidate.loc[2][1]}) ", file=f)
